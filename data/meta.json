@@ -1,0 +1,38 @@
+{
+  "title": "訪日外国人 広域誘導シミュレーター",
+  "generated_from": "FF-Data 2024 / ODPT 2026-09-16 時点",
+  "access": {
+    "depart_at": "09:00",
+    "calendar": "Weekday",
+    "transfer_min": 5,
+    "transfer_penalty_min": 10,
+    "note": "ODPT の列車時刻表で計算。ODPT に新幹線が1件も無いため、新幹線区間のみJR東日本の公表時刻表（timetables.jreast.co.jp）から補い、経路ごとに出典を分けて記録している。中央本線・富士急行線・箱根登山線・御殿場線などは依然として時刻表が無く算出できない。"
+  },
+  "sources": [
+    {
+      "name": "FF-Data（訪日外国人流動データ）",
+      "org": "国土交通省",
+      "url": "https://www.mlit.go.jp/sogoseisaku/soukou/sogoseisaku_soukou_fr_000022.html",
+      "note": "都道府県粒度の推計値。実測の移動軌跡ではない。"
+    },
+    {
+      "name": "公共交通オープンデータセンター / 公共交通オープンデータチャレンジ2026",
+      "org": "公共交通オープンデータ協議会",
+      "url": "https://www.odpt.org/",
+      "note": "列車時刻表。収録されていない路線は到達時間を算出できない。"
+    },
+    {
+      "name": "JR東日本 公式時刻表",
+      "org": "東日本旅客鉄道",
+      "url": "https://timetables.jreast.co.jp/",
+      "note": "ODPT に新幹線の時刻表が1件も無いため、新幹線区間のみここから補っている。"
+    },
+    {
+      "name": "地理院タイル・住所検索API",
+      "org": "国土地理院",
+      "url": "https://maps.gsi.go.jp/development/ichiran.html",
+      "note": "背景地図と、ODPT に無い駅の座標。"
+    }
+  ],
+  "disclaimer": "本サイトは行動予測ではなく what-if シミュレーションです。FF-Data の推計値と単純化したモデルに基づいています。"
+}
