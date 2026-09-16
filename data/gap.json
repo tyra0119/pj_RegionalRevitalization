@@ -147,10 +147,10 @@
       "source": "ODPT＋JR東日本 公表時刻表(新幹線)",
       "uses_shinkansen": true,
       "published": {
-        "minutes": 46,
-        "train": "新幹線あさま 655号（東京－長野）",
+        "minutes": 45,
+        "train": "新幹線はくたか 595号（東京－金沢）",
         "source": "JR東日本 公式時刻表",
-        "source_url": "https://timetables.jreast.co.jp/2609/train/185/189771.html",
+        "source_url": "https://timetables.jreast.co.jp/2609/train/185/189711.html",
         "retrieved": "2026-09-16"
       },
       "reachability": "普通列車の時刻表あり",
@@ -193,10 +193,10 @@
       "source": "ODPT＋JR東日本 公表時刻表(新幹線)",
       "uses_shinkansen": true,
       "published": {
-        "minutes": 59,
-        "train": "新幹線ひかり 705号（東京－岡山）",
+        "minutes": 56,
+        "train": "新幹線ひかり 657号（東京－新大阪）",
         "source": "JR東日本 公式時刻表",
-        "source_url": "https://timetables.jreast.co.jp/2609/train/125/128501.html",
+        "source_url": "https://timetables.jreast.co.jp/2609/train/025/026601.html",
         "retrieved": "2026-09-16"
       },
       "reachability": "ODPT未収録",
@@ -592,6 +592,116 @@
   "n_total": 27,
   "n_reachable": 19,
   "n_shinkansen": 11,
+  "primary": {
+    "calendar": "Weekday",
+    "depart_at": "09:00"
+  },
+  "scenarios": [
+    {
+      "calendar": "SaturdayHoliday",
+      "depart_at": "09:00",
+      "n_reachable": 19,
+      "median_minutes": 66,
+      "unreachable": [
+        "勝沼ぶどう郷駅",
+        "常陸大子駅",
+        "御殿場駅",
+        "松本駅",
+        "河口湖駅",
+        "甲府駅",
+        "箱根湯本駅",
+        "西武秩父駅"
+      ]
+    },
+    {
+      "calendar": "SaturdayHoliday",
+      "depart_at": "13:00",
+      "n_reachable": 17,
+      "median_minutes": 62,
+      "unreachable": [
+        "勝沼ぶどう郷駅",
+        "常陸大子駅",
+        "御殿場駅",
+        "松本駅",
+        "河口湖駅",
+        "渋川駅",
+        "甲府駅",
+        "箱根湯本駅",
+        "西武秩父駅",
+        "長野原草津口駅"
+      ]
+    },
+    {
+      "calendar": "SaturdayHoliday",
+      "depart_at": "17:00",
+      "n_reachable": 17,
+      "median_minutes": 62,
+      "unreachable": [
+        "勝沼ぶどう郷駅",
+        "常陸大子駅",
+        "御殿場駅",
+        "松本駅",
+        "河口湖駅",
+        "渋川駅",
+        "甲府駅",
+        "箱根湯本駅",
+        "西武秩父駅",
+        "長野原草津口駅"
+      ]
+    },
+    {
+      "calendar": "Weekday",
+      "depart_at": "09:00",
+      "n_reachable": 19,
+      "median_minutes": 66,
+      "unreachable": [
+        "勝沼ぶどう郷駅",
+        "常陸大子駅",
+        "御殿場駅",
+        "松本駅",
+        "河口湖駅",
+        "甲府駅",
+        "箱根湯本駅",
+        "西武秩父駅"
+      ]
+    },
+    {
+      "calendar": "Weekday",
+      "depart_at": "13:00",
+      "n_reachable": 17,
+      "median_minutes": 62,
+      "unreachable": [
+        "勝沼ぶどう郷駅",
+        "常陸大子駅",
+        "御殿場駅",
+        "松本駅",
+        "河口湖駅",
+        "渋川駅",
+        "甲府駅",
+        "箱根湯本駅",
+        "西武秩父駅",
+        "長野原草津口駅"
+      ]
+    },
+    {
+      "calendar": "Weekday",
+      "depart_at": "17:00",
+      "n_reachable": 17,
+      "median_minutes": 62,
+      "unreachable": [
+        "勝沼ぶどう郷駅",
+        "常陸大子駅",
+        "御殿場駅",
+        "松本駅",
+        "河口湖駅",
+        "渋川駅",
+        "甲府駅",
+        "箱根湯本駅",
+        "西武秩父駅",
+        "長野原草津口駅"
+      ]
+    }
+  ],
   "origins": [
     "上野駅",
     "新宿駅",

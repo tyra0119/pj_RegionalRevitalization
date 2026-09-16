@@ -1,12 +1,51 @@
 {
   "title": "訪日外国人 広域誘導シミュレーター",
   "generated_from": "FF-Data 2024 / ODPT 2026-09-16 時点",
+  "odpt_notice": "本アプリケーションが利用する公共交通データは、公共交通オープンデータセンターにおいて提供されるものです。公共交通事業者により提供されたデータを元にしていますが、必ずしも正確・完全なものとは限りません。本アプリケーションの表示内容について、公共交通事業者への直接の問合せは行わないでください。",
+  "contact": {
+    "label": "本アプリケーションに関するお問い合わせ",
+    "url": "https://github.com/tyra0119/pj_RegionalRevitalization/issues",
+    "text": "GitHub Issues"
+  },
+  "retrieved": [
+    {
+      "name": "FF-Data 交通機関別OD表 2019・2024年",
+      "date": "2026-09-16"
+    },
+    {
+      "name": "FF-Data 国籍別OD表 2024年",
+      "date": "2026-09-16"
+    },
+    {
+      "name": "観光庁 インバウンド消費動向調査 2024年年間",
+      "date": "2026-09-16"
+    },
+    {
+      "name": "ODPT 列車時刻表・駅データ",
+      "date": "2026-09-16"
+    },
+    {
+      "name": "JR東日本 公式時刻表（新幹線）",
+      "date": "2026-09-16"
+    }
+  ],
   "access": {
-    "depart_at": "09:00",
-    "calendar": "Weekday",
+    "primary": {
+      "calendar": "Weekday",
+      "depart_at": "09:00"
+    },
+    "calendars": [
+      "Weekday",
+      "SaturdayHoliday"
+    ],
+    "departures": [
+      "09:00",
+      "13:00",
+      "17:00"
+    ],
     "transfer_min": 5,
     "transfer_penalty_min": 10,
-    "note": "ODPT の列車時刻表で計算。ODPT に新幹線が1件も無いため、新幹線区間のみJR東日本の公表時刻表（timetables.jreast.co.jp）から補い、経路ごとに出典を分けて記録している。中央本線・富士急行線・箱根登山線・御殿場線などは依然として時刻表が無く算出できない。"
+    "note": "ODPT の列車時刻表で計算。ODPT に新幹線が1件も無いため、新幹線区間のみJR東日本の公表時刻表（timetables.jreast.co.jp）から補い、経路ごとに出典を分けて記録している。中央本線・富士急行線・箱根登山線・御殿場線などは依然として時刻表が無く算出できない。所要時間は出発時刻からの経過時間で、次の列車を待つ時間を含む。"
   },
   "sources": [
     {
@@ -26,6 +65,12 @@
       "org": "東日本旅客鉄道",
       "url": "https://timetables.jreast.co.jp/",
       "note": "ODPT に新幹線の時刻表が1件も無いため、新幹線区間のみここから補っている。"
+    },
+    {
+      "name": "インバウンド消費動向調査 2024年年間【参考】都道府県集計表",
+      "org": "観光庁",
+      "url": "https://www.mlit.go.jp/kankocho/tokei_hakusyo/gaikokujinshohidoko.html",
+      "note": "訪問者1人あたりの県内消費単価。FF-Data の流動とは母数が異なるため推計は目安。"
     },
     {
       "name": "地理院タイル・住所検索API",
